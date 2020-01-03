@@ -15,7 +15,7 @@
     "build": "./node_modules/.bin/tsc src/cli.ts --outDir ./build",
     "prepare": ""
   },
-  "keywords": [],
+  "keywords": ["filemaker"],
   "author": "Mocchapine",
   "license": "MIT",
   "devDependencies": {
@@ -31,6 +31,9 @@
     "meow": "^6.0.0",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.4"
+  },
+  "repository": {
+    "url": "https://github.com/RayhanHamada/filemaker"
   },
   "bin": {
     "filemaker": "./build/cli.js"
