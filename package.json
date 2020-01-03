@@ -13,7 +13,8 @@
   "scripts": {
     "test": "./node_modules/.bin/jest",
     "build": "./node_modules/.bin/tsc src/cli.ts --outDir ./build",
-    "prepare": ""
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test"
   },
   "keywords": ["filemaker"],
   "author": "Mocchapine",
