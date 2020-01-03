@@ -1,0 +1,38 @@
+{
+  "name": "filemaker",
+  "version": "1.0.0",
+  "description": "",
+  "maintainers": [
+    {
+      "name": "RayhanHamada",
+      "email": "hamadadev2016@gmail.com",
+      "url": "https://www.mocchapine.xyz"
+    }
+  ],
+  "main": "index.js",
+  "scripts": {
+    "jest": "./node_modules/.bin/ts-jest",
+    "build": "./node_modules/.bin/tsc src/cli.ts --outDir ./build",
+    "prepare": ""
+  },
+  "keywords": [],
+  "author": "Mocchapine",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/meow": "^5.0.0",
+    "@types/node": "^13.1.2",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.5.4",
+    "tsc": "^1.20150623.0"
+  },
+  "dependencies": {
+    "@types/jest": "^24.0.25",
+    "jest": "^24.9.0",
+    "meow": "^6.0.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.4"
+  },
+  "bin": {
+    "filemaker": "./build/cli.js"
+  }
+}
