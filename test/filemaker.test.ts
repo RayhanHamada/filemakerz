@@ -1,6 +1,6 @@
 import filemaker from "./../src/filemaker";
 import * as fs from "fs";
-import path from "path";
+import * as  path from "path";
 
 describe("filemaker function", () => {
   it("should make a file in test directory", () => {
