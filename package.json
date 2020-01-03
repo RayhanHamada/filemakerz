@@ -1,5 +1,5 @@
 {
-  "name": "filemaker",
+  "name": "filemakerz",
   "version": "1.0.0",
   "description": "",
   "maintainers": [
@@ -16,7 +16,9 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm run test"
   },
-  "keywords": ["filemaker"],
+  "keywords": [
+    "filemaker"
+  ],
   "author": "Mocchapine",
   "license": "MIT",
   "devDependencies": {
@@ -37,6 +39,6 @@
     "url": "https://github.com/RayhanHamada/filemaker"
   },
   "bin": {
-    "filemaker": "./build/cli.js"
+    "filemakerz": "./build/cli.js"
   }
 }

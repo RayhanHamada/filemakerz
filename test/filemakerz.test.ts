@@ -1,12 +1,12 @@
-import filemaker from "./../src/filemaker";
+import filemakerz from "../src/filemakerz";
 import * as fs from "fs";
 import * as path from "path";
 
 describe("filemaker function", () => {
   it("should make a file in test directory", async () => {
     const filePath = path.join(__dirname, "test.txt");
-    // call filemaker in test directory
-    filemaker(filePath);
+    // call filemakerz in test directory
+    filemakerz(filePath);
 
     await setTimeout(() => {
       // see if test.txt is created

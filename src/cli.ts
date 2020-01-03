@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 
 const meow = require("meow");
-import filemaker from "./filemaker";
+import filemakerz from "./filemakerz";
 
 const helpPrompt = `
     Usage
-        filemaker <filename>
+        filemakerz <filename>
 
     Example 
-        filemaker test.txt
+        filemakerz test.txt
         OR
-        filemaker myFolder/test.txt
+        filemakerz myFolder/test.txt
 `;
 
 const cli = meow(helpPrompt, {});
@@ -20,5 +20,5 @@ if (cli.input.length === 0) {
   console.log(helpPrompt);
 } else if (cli.input.length === 1) {
   const filePath = cli.input[0];
-  filemaker(filePath);
+  filemakerz(filePath);
 }
