@@ -1,23 +1,27 @@
 import filemaker from "./../src/filemaker";
 import * as fs from "fs";
-import * as  path from "path";
+import * as path from "path";
 
 describe("filemaker function", () => {
-  it("should make a file in test directory", () => {
+  it("should make a file in test directory", async () => {
     const filePath = path.join(__dirname, "test.txt");
-    // call firemaker in test directory
+    // call filemaker in test directory
     filemaker(filePath);
 
-    // see if test.txt is created
-    fs.exists(filePath, val => {
-      expect(val).toBeTruthy();
-    });
+    await setTimeout(() => {
+      // see if test.txt is created
+      fs.exists(filePath, val => {
+        expect(val).toBeTruthy();
+      });
+    }, 3000);
 
-    // delete test.txt after created
-    fs.unlink(filePath, err => {
-      if (err) {
-        throw err;
-      }
-    });
+    await setTimeout(() => {
+      // delete test.txt after created
+      fs.unlink(filePath, err => {
+        if (err) {
+          throw err;
+        }
+      });
+    }, 3000);
   });
 });
