@@ -11,7 +11,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/ts-jest",
+    "test": "./node_modules/.bin/jest",
     "build": "./node_modules/.bin/tsc src/cli.ts --outDir ./build",
     "prepare": ""
   },
